@@ -75,78 +75,75 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-background overflow-x-hidden w-full">
-      <nav className="fixed top-0 w-full bg-primary/95 backdrop-blur-sm z-50 border-b border-primary/20">
-        <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-          <div className="flex items-center gap-2">
-            <div className="w-8 h-8 md:w-10 md:h-10 bg-accent rounded flex items-center justify-center">
-              <Icon name="Leaf" className="text-white" size={20} />
+      <nav className="fixed top-0 w-full bg-white/80 backdrop-blur-xl z-50 border-b border-border/50 shadow-sm">
+        <div className="container mx-auto px-4 py-5 flex justify-between items-center">
+          <div className="flex items-center gap-3">
+            <div className="w-10 h-10 md:w-12 md:h-12 bg-gradient-to-br from-accent to-accent/80 rounded-xl flex items-center justify-center shadow-lg">
+              <Icon name="Leaf" className="text-white" size={24} />
             </div>
             <div>
-              <h1 className="text-base md:text-xl font-bold text-white">FertiGlobal Emirates</h1>
-              <p className="text-xs text-white/80 hidden sm:block">UralKhim Partner</p>
+              <h1 className="text-lg md:text-2xl font-bold text-primary tracking-tight">FertiGlobal Emirates</h1>
+              <p className="text-xs text-muted-foreground hidden sm:block font-medium">UralKhim Partner</p>
             </div>
           </div>
-          <div className="flex items-center gap-2 md:gap-6">
-            <div className="hidden md:flex gap-6">
-              <a href="#home" className="text-white hover:text-accent transition-colors">Главная</a>
-              <a href="#about" className="text-white hover:text-accent transition-colors">О компании</a>
-              <a href="#product" className="text-white hover:text-accent transition-colors">Продукция</a>
-              <a href="#delivery" className="text-white hover:text-accent transition-colors">Условия</a>
-              <a href="#contact" className="text-white hover:text-accent transition-colors">Контакты</a>
+          <div className="flex items-center gap-3 md:gap-8">
+            <div className="hidden md:flex gap-8">
+              <a href="#home" className="text-foreground hover:text-accent transition-all font-medium hover:scale-105">Главная</a>
+              <a href="#about" className="text-foreground hover:text-accent transition-all font-medium hover:scale-105">О компании</a>
+              <a href="#product" className="text-foreground hover:text-accent transition-all font-medium hover:scale-105">Продукция</a>
+              <a href="#delivery" className="text-foreground hover:text-accent transition-all font-medium hover:scale-105">Условия</a>
+              <a href="#contact" className="text-foreground hover:text-accent transition-all font-medium hover:scale-105">Контакты</a>
             </div>
-            <a href="tel:+79337776062" className="flex items-center gap-1 md:gap-2 text-white hover:text-accent transition-colors whitespace-nowrap">
-              <Icon name="Phone" size={16} className="md:hidden flex-shrink-0" />
-              <Icon name="Phone" size={18} className="hidden md:block flex-shrink-0" />
-              <span className="font-semibold text-xs md:text-base">+7 933 777 60 62</span>
+            <a href="tel:+79337776062" className="flex items-center gap-2 text-accent hover:text-accent/80 transition-all whitespace-nowrap font-semibold hover:scale-105">
+              <Icon name="Phone" size={18} className="md:hidden flex-shrink-0" />
+              <Icon name="Phone" size={20} className="hidden md:block flex-shrink-0" />
+              <span className="text-sm md:text-base">+7 933 777 60 62</span>
             </a>
           </div>
         </div>
       </nav>
 
-      <section id="home" className="pt-24 pb-16 bg-gradient-to-b from-primary to-secondary relative overflow-hidden">
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute inset-0" style={{
-            backgroundImage: `linear-gradient(0deg, transparent 24%, rgba(255,255,255,.05) 25%, rgba(255,255,255,.05) 26%, transparent 27%, transparent 74%, rgba(255,255,255,.05) 75%, rgba(255,255,255,.05) 76%, transparent 77%, transparent), linear-gradient(90deg, transparent 24%, rgba(255,255,255,.05) 25%, rgba(255,255,255,.05) 26%, transparent 27%, transparent 74%, rgba(255,255,255,.05) 75%, rgba(255,255,255,.05) 76%, transparent 77%, transparent)`,
-            backgroundSize: '50px 50px'
-          }}></div>
-        </div>
+      <section id="home" className="pt-32 pb-20 bg-gradient-to-br from-background via-muted/30 to-background relative overflow-hidden">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(160,225,200,0.15),transparent_50%),radial-gradient(circle_at_70%_80%,rgba(160,200,225,0.1),transparent_50%)]"></div>
         <div className="container mx-auto px-4 relative z-10">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="text-white animate-fade-in">
-              <div className="inline-block px-4 py-2 bg-accent/20 backdrop-blur-sm rounded-full mb-6">
-                <span className="text-accent font-semibold">Поставки из России</span>
+          <div className="grid md:grid-cols-2 gap-16 items-center">
+            <div className="animate-fade-in">
+              <div className="inline-flex items-center gap-2 px-5 py-2.5 bg-accent/10 border border-accent/20 rounded-full mb-8">
+                <div className="w-2 h-2 bg-accent rounded-full animate-pulse"></div>
+                <span className="text-accent font-semibold text-sm tracking-wide">Поставки из России</span>
               </div>
-              <h2 className="text-3xl md:text-5xl font-bold mb-6 leading-tight">
+              <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-[1.1] text-primary">
                 Азотные удобрения<br />
-                <span className="text-accent">мирового класса</span>
+                <span className="bg-gradient-to-r from-accent to-accent/70 bg-clip-text text-transparent">мирового класса</span>
               </h2>
-              <p className="text-lg md:text-xl mb-8 text-white/90">
+              <p className="text-xl md:text-2xl mb-10 text-muted-foreground font-light leading-relaxed">
                 Прямые поставки UralNitro Pro 46 от производителя УралХим через нашу компанию в Дубае
               </p>
-              <div className="grid grid-cols-3 gap-2 md:gap-4 mb-8">
-                <div className="bg-white/10 backdrop-blur-sm p-2 md:p-4 rounded border border-white/20">
-                  <div className="text-xl md:text-3xl font-bold text-accent">46%</div>
-                  <div className="text-xs md:text-sm text-white/80">Азот N</div>
+              <div className="grid grid-cols-3 gap-4 md:gap-6 mb-10">
+                <div className="bg-card border-2 border-accent/20 p-4 md:p-6 rounded-2xl hover:shadow-xl hover:border-accent/40 transition-all hover:-translate-y-1">
+                  <div className="text-3xl md:text-4xl font-bold text-accent mb-1">46%</div>
+                  <div className="text-sm md:text-base text-muted-foreground font-medium">Азот N</div>
                 </div>
-                <div className="bg-white/10 backdrop-blur-sm p-2 md:p-4 rounded border border-white/20">
-                  <div className="text-xl md:text-3xl font-bold text-accent">100K</div>
-                  <div className="text-xs md:text-sm text-white/80">тонн/месяц</div>
+                <div className="bg-card border-2 border-accent/20 p-4 md:p-6 rounded-2xl hover:shadow-xl hover:border-accent/40 transition-all hover:-translate-y-1">
+                  <div className="text-3xl md:text-4xl font-bold text-accent mb-1">100K</div>
+                  <div className="text-sm md:text-base text-muted-foreground font-medium">тонн/месяц</div>
                 </div>
-                <div className="bg-white/10 backdrop-blur-sm p-2 md:p-4 rounded border border-white/20">
-                  <div className="text-xl md:text-3xl font-bold text-accent">20</div>
-                  <div className="text-xs md:text-sm text-white/80">дней FOB</div>
+                <div className="bg-card border-2 border-accent/20 p-4 md:p-6 rounded-2xl hover:shadow-xl hover:border-accent/40 transition-all hover:-translate-y-1">
+                  <div className="text-3xl md:text-4xl font-bold text-accent mb-1">20</div>
+                  <div className="text-sm md:text-base text-muted-foreground font-medium">дней FOB</div>
                 </div>
               </div>
             </div>
             <div className="relative animate-scale-in max-w-full">
+              <div className="absolute inset-0 bg-gradient-to-br from-accent/20 to-primary/20 rounded-3xl blur-3xl -z-10 transform scale-105"></div>
               <img 
                 src="https://cdn.poehali.dev/projects/e2337ca5-ae7d-430a-b963-b32567a9167d/files/6f7ef9f5-24fe-4f48-aee3-1d04c9e73d99.jpg" 
                 alt="Industrial facility"
-                className="rounded-lg shadow-2xl border-4 border-white/20 w-full h-auto"
+                className="rounded-3xl shadow-2xl border-8 border-white/50 w-full h-auto"
               />
-              <div className="absolute bottom-2 right-2 md:-bottom-6 md:-right-6 bg-accent p-3 md:p-6 rounded-lg shadow-xl">
-                <div className="text-white text-lg md:text-2xl font-bold">От $330</div>
-                <div className="text-white/90 text-xs md:text-sm">за тонну FOB</div>
+              <div className="absolute -bottom-6 -right-6 bg-gradient-to-br from-accent to-accent/90 p-6 md:p-8 rounded-2xl shadow-2xl border-4 border-white">
+                <div className="text-white text-2xl md:text-3xl font-bold mb-1">От $330</div>
+                <div className="text-white/90 text-base md:text-lg font-medium">за тонну FOB</div>
               </div>
             </div>
           </div>
@@ -156,63 +153,63 @@ const Index = () => {
       <section id="about" className="py-16 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <div className="text-center mb-12 animate-fade-in">
-              <h2 className="text-2xl md:text-4xl font-bold text-primary mb-4">О компании FertiGlobal Emirates</h2>
-              <div className="w-24 h-1 bg-accent mx-auto mb-6"></div>
-              <p className="text-lg text-muted-foreground">
+            <div className="text-center mb-16 animate-fade-in">
+              <h2 className="text-3xl md:text-5xl font-bold text-primary mb-5">О компании FertiGlobal Emirates</h2>
+              <div className="w-20 h-1.5 bg-gradient-to-r from-transparent via-accent to-transparent mx-auto mb-6"></div>
+              <p className="text-xl text-muted-foreground font-light max-w-3xl mx-auto">
                 Официальный дистрибьютор азотных удобрений производства УралХим
               </p>
             </div>
             
-            <div className="grid md:grid-cols-2 gap-8">
-              <Card className="p-6 border-l-4 border-accent hover:shadow-lg transition-shadow">
+            <div className="grid md:grid-cols-2 gap-6">
+              <Card className="p-8 border-2 border-border hover:border-accent/50 hover:shadow-2xl transition-all duration-300 group bg-card hover:-translate-y-2">
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-accent/10 rounded flex items-center justify-center flex-shrink-0">
-                    <Icon name="Building2" className="text-accent" size={24} />
+                  <div className="w-14 h-14 bg-gradient-to-br from-accent to-accent/80 rounded-2xl flex items-center justify-center flex-shrink-0 shadow-lg group-hover:scale-110 transition-transform">
+                    <Icon name="Building2" className="text-white" size={28} />
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-primary mb-2">Партнерство с УралХим</h3>
-                    <p className="text-muted-foreground">
+                    <h3 className="text-2xl font-bold text-primary mb-3">Партнерство с УралХим</h3>
+                    <p className="text-muted-foreground leading-relaxed">
                       Прямые контракты с крупнейшим российским производителем минеральных удобрений
                     </p>
                   </div>
                 </div>
               </Card>
 
-              <Card className="p-6 border-l-4 border-primary hover:shadow-lg transition-shadow">
+              <Card className="p-8 border-2 border-border hover:border-accent/50 hover:shadow-2xl transition-all duration-300 group bg-card hover:-translate-y-2">
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-primary/10 rounded flex items-center justify-center flex-shrink-0">
-                    <Icon name="Globe" className="text-primary" size={24} />
+                  <div className="w-14 h-14 bg-gradient-to-br from-primary to-primary/80 rounded-2xl flex items-center justify-center flex-shrink-0 shadow-lg group-hover:scale-110 transition-transform">
+                    <Icon name="Globe" className="text-white" size={28} />
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-primary mb-2">Регистрация в ОАЭ</h3>
-                    <p className="text-muted-foreground">
+                    <h3 className="text-2xl font-bold text-primary mb-3">Регистрация в ОАЭ</h3>
+                    <p className="text-muted-foreground leading-relaxed">
                       Компания зарегистрирована в Дубае с полным пакетом экспортных лицензий
                     </p>
                   </div>
                 </div>
               </Card>
 
-              <Card className="p-6 border-l-4 border-secondary hover:shadow-lg transition-shadow">
+              <Card className="p-8 border-2 border-border hover:border-accent/50 hover:shadow-2xl transition-all duration-300 group bg-card hover:-translate-y-2">
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-secondary/10 rounded flex items-center justify-center flex-shrink-0">
-                    <Icon name="Ship" className="text-secondary" size={24} />
+                  <div className="w-14 h-14 bg-gradient-to-br from-secondary to-secondary/80 rounded-2xl flex items-center justify-center flex-shrink-0 shadow-lg group-hover:scale-110 transition-transform">
+                    <Icon name="Ship" className="text-white" size={28} />
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-primary mb-2">Логистика FOB</h3>
-                    <p className="text-muted-foreground">Отгрузка из порта Санкт-Петербург и Новороссийск с полным документальным сопровождением</p>
+                    <h3 className="text-2xl font-bold text-primary mb-3">Логистика FOB</h3>
+                    <p className="text-muted-foreground leading-relaxed">Отгрузка из порта Санкт-Петербург и Новороссийск с полным документальным сопровождением</p>
                   </div>
                 </div>
               </Card>
 
-              <Card className="p-6 border-l-4 border-accent hover:shadow-lg transition-shadow">
+              <Card className="p-8 border-2 border-border hover:border-accent/50 hover:shadow-2xl transition-all duration-300 group bg-card hover:-translate-y-2">
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-accent/10 rounded flex items-center justify-center flex-shrink-0">
-                    <Icon name="Shield" className="text-accent" size={24} />
+                  <div className="w-14 h-14 bg-gradient-to-br from-accent to-accent/80 rounded-2xl flex items-center justify-center flex-shrink-0 shadow-lg group-hover:scale-110 transition-transform">
+                    <Icon name="Shield" className="text-white" size={28} />
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-primary mb-2">Гарантии качества</h3>
-                    <p className="text-muted-foreground">
+                    <h3 className="text-2xl font-bold text-primary mb-3">Гарантии качества</h3>
+                    <p className="text-muted-foreground leading-relaxed">
                       Сертификаты соответствия и лабораторные анализы для каждой партии
                     </p>
                   </div>
@@ -223,12 +220,12 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="product" className="py-16 bg-muted/30">
+      <section id="product" className="py-20 bg-gradient-to-b from-muted/20 to-background">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-12 animate-fade-in">
-            <h2 className="text-2xl md:text-4xl font-bold text-primary mb-4">UralNitro Pro 46</h2>
-            <div className="w-24 h-1 bg-accent mx-auto mb-6"></div>
-            <p className="text-lg text-muted-foreground">Гранулированная карбамидная мочевина высшего качества</p>
+          <div className="text-center mb-16 animate-fade-in">
+            <h2 className="text-3xl md:text-5xl font-bold text-primary mb-5">UralNitro Pro 46</h2>
+            <div className="w-20 h-1.5 bg-gradient-to-r from-transparent via-accent to-transparent mx-auto mb-6"></div>
+            <p className="text-xl text-muted-foreground font-light">Гранулированная карбамидная мочевина высшего качества</p>
           </div>
 
           <div className="max-w-5xl mx-auto">
@@ -245,62 +242,62 @@ const Index = () => {
                 </div>
               </div>
 
-              <Card className="p-8 border-2 border-accent">
-                <h3 className="text-2xl font-bold text-primary mb-6">Технические характеристики</h3>
-                <div className="space-y-4">
-                  <div className="flex justify-between items-center pb-3 border-b">
-                    <span className="text-muted-foreground">Химическое название</span>
-                    <span className="font-semibold text-primary">Карбамид CO(NH₂)₂</span>
+              <Card className="p-8 md:p-10 border-2 border-accent/30 hover:border-accent/60 transition-all bg-gradient-to-br from-card to-muted/20 shadow-lg">
+                <h3 className="text-3xl font-bold text-primary mb-8">Технические характеристики</h3>
+                <div className="space-y-5">
+                  <div className="flex justify-between items-center pb-4 border-b-2 border-border">
+                    <span className="text-muted-foreground font-medium">Химическое название</span>
+                    <span className="font-bold text-primary text-lg">Карбамид CO(NH₂)₂</span>
                   </div>
-                  <div className="flex justify-between items-center pb-3 border-b">
-                    <span className="text-muted-foreground">Содержание азота</span>
-                    <span className="font-bold text-2xl text-accent">46%</span>
+                  <div className="flex justify-between items-center pb-4 border-b-2 border-border">
+                    <span className="text-muted-foreground font-medium">Содержание азота</span>
+                    <span className="font-bold text-3xl bg-gradient-to-r from-accent to-accent/70 bg-clip-text text-transparent">46%</span>
                   </div>
-                  <div className="flex justify-between items-center pb-3 border-b">
-                    <span className="text-muted-foreground">Форма выпуска</span>
-                    <span className="font-semibold text-primary">Гранулы 2-4 мм</span>
+                  <div className="flex justify-between items-center pb-4 border-b-2 border-border">
+                    <span className="text-muted-foreground font-medium">Форма выпуска</span>
+                    <span className="font-bold text-primary text-lg">Гранулы 2-4 мм</span>
                   </div>
-                  <div className="flex justify-between items-center pb-3 border-b">
-                    <span className="text-muted-foreground">pH раствора</span>
-                    <span className="font-semibold text-primary">~7.0 (нейтральный)</span>
+                  <div className="flex justify-between items-center pb-4 border-b-2 border-border">
+                    <span className="text-muted-foreground font-medium">pH раствора</span>
+                    <span className="font-bold text-primary text-lg">~7.0 (нейтральный)</span>
                   </div>
-                  <div className="flex justify-between items-center pb-3 border-b">
-                    <span className="text-muted-foreground">Растворимость</span>
-                    <span className="font-semibold text-primary">Отличная</span>
+                  <div className="flex justify-between items-center pb-4 border-b-2 border-border">
+                    <span className="text-muted-foreground font-medium">Растворимость</span>
+                    <span className="font-bold text-primary text-lg">Отличная</span>
                   </div>
-                  <div className="flex justify-between items-center pb-3 border-b">
-                    <span className="text-muted-foreground">Цвет</span>
-                    <span className="font-semibold text-primary">Белый/сероватый</span>
+                  <div className="flex justify-between items-center pb-4 border-b-2 border-border">
+                    <span className="text-muted-foreground font-medium">Цвет</span>
+                    <span className="font-bold text-primary text-lg">Белый/сероватый</span>
                   </div>
                 </div>
               </Card>
             </div>
 
-            <Card className="p-8 bg-gradient-to-br from-primary to-secondary text-white">
-              <div className="flex items-center gap-4 mb-6">
-                <div className="w-16 h-16 bg-accent rounded-full flex items-center justify-center">
-                  <Icon name="Droplets" size={32} />
+            <Card className="p-10 bg-gradient-to-br from-primary via-primary/95 to-secondary text-white shadow-2xl border-0">
+              <div className="flex items-center gap-4 mb-8">
+                <div className="w-20 h-20 bg-accent rounded-2xl flex items-center justify-center shadow-xl">
+                  <Icon name="Droplets" size={36} />
                 </div>
                 <div>
-                  <h3 className="text-2xl font-bold">Применение</h3>
-                  <p className="text-white/80">Универсальное азотное удобрение</p>
+                  <h3 className="text-3xl font-bold mb-1">Применение</h3>
+                  <p className="text-white/90 text-lg font-light">Универсальное азотное удобрение</p>
                 </div>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div className="bg-white/10 backdrop-blur-sm p-4 rounded">
-                  <Icon name="Sprout" className="mb-3" size={32} />
-                  <h4 className="font-bold mb-2">Почвенное внесение</h4>
-                  <p className="text-sm text-white/80">Основное и припосевное удобрение</p>
+                <div className="bg-white/10 backdrop-blur-sm p-6 rounded-2xl hover:bg-white/20 transition-all border border-white/20 hover:scale-105">
+                  <Icon name="Sprout" className="mb-4" size={36} />
+                  <h4 className="font-bold mb-2 text-xl">Почвенное внесение</h4>
+                  <p className="text-white/80 leading-relaxed">Основное и припосевное удобрение</p>
                 </div>
-                <div className="bg-white/10 backdrop-blur-sm p-4 rounded">
-                  <Icon name="Droplet" className="mb-3" size={32} />
-                  <h4 className="font-bold mb-2">Капельный полив</h4>
-                  <p className="text-sm text-white/80">Идеально растворяется для фертигации</p>
+                <div className="bg-white/10 backdrop-blur-sm p-6 rounded-2xl hover:bg-white/20 transition-all border border-white/20 hover:scale-105">
+                  <Icon name="Droplet" className="mb-4" size={36} />
+                  <h4 className="font-bold mb-2 text-xl">Капельный полив</h4>
+                  <p className="text-white/80 leading-relaxed">Идеально растворяется для фертигации</p>
                 </div>
-                <div className="bg-white/10 backdrop-blur-sm p-4 rounded">
-                  <Icon name="CloudRain" className="mb-3" size={32} />
-                  <h4 className="font-bold mb-2">Внекорневая подкормка</h4>
-                  <p className="text-sm text-white/80">Быстрое усвоение через листья</p>
+                <div className="bg-white/10 backdrop-blur-sm p-6 rounded-2xl hover:bg-white/20 transition-all border border-white/20 hover:scale-105">
+                  <Icon name="CloudRain" className="mb-4" size={36} />
+                  <h4 className="font-bold mb-2 text-xl">Внекорневая подкормка</h4>
+                  <p className="text-white/80 leading-relaxed">Быстрое усвоение через листья</p>
                 </div>
               </div>
             </Card>
