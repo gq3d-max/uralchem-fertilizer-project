@@ -132,7 +132,7 @@ const Index = () => {
                 <div className="w-2 h-2 bg-accent rounded-full animate-pulse"></div>
                 <span className="text-accent font-semibold text-sm tracking-wide">Поставки из России</span>
               </div>
-              <h2 className="md:text-6xl lg:text-7xl font-bold mb-6 leading-[1.1] text-primary text-5xl">
+              <h2 className="md:text-6xl lg:text-7xl font-bold mb-6 leading-[1.1] text-primary text-5xl text-left">
                 Азотные удобрения<br />
                 <span className="bg-gradient-to-r from-accent to-accent/70 bg-clip-text text-transparent text-5xl">мирового класса</span>
               </h2>
