@@ -465,7 +465,7 @@ const Index = () => {
               </div>
               <div>
                 <div className="font-bold">FertiGlobal Emirates</div>
-                <div className="text-xs text-white/70">Официальный партнер УралХим</div>
+                <div className="text-xs text-white/70">Официальный партнер УралКалий</div>
               </div>
             </div>
             <div className="text-center md:text-right">
