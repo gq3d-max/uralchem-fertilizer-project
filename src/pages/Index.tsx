@@ -134,7 +134,7 @@ const Index = () => {
               </div>
               <h2 className="md:text-6xl lg:text-7xl font-bold mb-6 leading-[1.1] text-primary text-5xl">
                 Азотные удобрения<br />
-                <span className="bg-gradient-to-r from-accent to-accent/70 bg-clip-text text-transparent">мирового класса</span>
+                <span className="bg-gradient-to-r from-accent to-accent/70 bg-clip-text text-transparent text-5xl">мирового класса</span>
               </h2>
               <p className="text-xl md:text-2xl mb-10 text-muted-foreground font-light leading-relaxed">
                 Прямые поставки UralNitro Pro 46 от производителя УралХим через нашу компанию в Дубае
