@@ -313,7 +313,7 @@ const Index = () => {
 
               <Card className="p-8 md:p-10 border-2 border-accent/30 hover:border-accent/60 transition-all bg-gradient-to-br from-card to-muted/20 shadow-lg scroll-animate scroll-animate-delay-2 flex flex-col">
                 <h3 className="text-3xl font-bold text-primary mb-8">Технические характеристики</h3>
-                <div className="space-y-5">
+                <div className="space-y-5 mb-6">
                   <div className="flex justify-between items-center pb-4 border-b-2 border-border">
                     <span className="text-muted-foreground font-medium">Химическое название</span>
                     <span className="font-bold text-primary text-lg">Карбамид CO(NH₂)₂</span>
@@ -337,6 +337,43 @@ const Index = () => {
                   <div className="flex justify-between items-center pb-4 border-b-2 border-border">
                     <span className="text-muted-foreground font-medium">Цвет</span>
                     <span className="font-bold text-primary text-lg">Белый/сероватый</span>
+                  </div>
+                </div>
+                
+                <div className="mt-auto pt-6 border-t-2 border-accent/20">
+                  <div className="bg-gradient-to-r from-accent/10 to-primary/10 p-5 rounded-xl">
+                    <div className="flex items-center gap-2 mb-3">
+                      <Icon name="Award" className="text-accent" size={22} />
+                      <span className="font-bold text-primary">Сертификация</span>
+                    </div>
+                    <div className="grid grid-cols-2 gap-3">
+                      <div className="flex items-center gap-2 text-sm">
+                        <Icon name="CheckCircle" className="text-accent flex-shrink-0" size={16} />
+                        <span className="text-muted-foreground">GOST 2081-2010</span>
+                      </div>
+                      <div className="flex items-center gap-2 text-sm">
+                        <Icon name="CheckCircle" className="text-accent flex-shrink-0" size={16} />
+                        <span className="text-muted-foreground">ISO 9001:2015</span>
+                      </div>
+                      <div className="flex items-center gap-2 text-sm">
+                        <Icon name="CheckCircle" className="text-accent flex-shrink-0" size={16} />
+                        <span className="text-muted-foreground">SGS проверено</span>
+                      </div>
+                      <div className="flex items-center gap-2 text-sm">
+                        <Icon name="CheckCircle" className="text-accent flex-shrink-0" size={16} />
+                        <span className="text-muted-foreground">Европейский стандарт</span>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div className="mt-4 bg-primary/5 p-4 rounded-xl border border-primary/10">
+                    <div className="flex items-start gap-3">
+                      <Icon name="Package" className="text-primary mt-1 flex-shrink-0" size={20} />
+                      <div>
+                        <div className="font-semibold text-primary mb-1">Упаковка</div>
+                        <p className="text-sm text-muted-foreground">Биг-бэги 500-1000 кг или мешки 50 кг с влагозащитой</p>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </Card>
