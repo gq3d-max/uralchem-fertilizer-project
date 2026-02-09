@@ -145,7 +145,7 @@ const Index = () => {
                 className="rounded-lg shadow-2xl border-4 border-white/20 w-full h-auto"
               />
               <div className="absolute bottom-2 right-2 md:-bottom-6 md:-right-6 bg-accent p-3 md:p-6 rounded-lg shadow-xl">
-                <div className="text-white text-lg md:text-2xl font-bold">От $450</div>
+                <div className="text-white text-lg md:text-2xl font-bold">От $330</div>
                 <div className="text-white/90 text-xs md:text-sm">за тонну FOB</div>
               </div>
             </div>
