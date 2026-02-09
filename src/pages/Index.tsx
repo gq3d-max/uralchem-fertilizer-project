@@ -137,9 +137,6 @@ const Index = () => {
                   <div className="text-xs md:text-sm text-white/80">дней FOB</div>
                 </div>
               </div>
-              <Button className="bg-accent hover:bg-accent/90 text-white px-4 md:px-8 py-4 md:py-6 text-sm md:text-lg w-full md:w-auto">
-                Запросить коммерческое предложение
-              </Button>
             </div>
             <div className="relative animate-scale-in max-w-full">
               <img 
