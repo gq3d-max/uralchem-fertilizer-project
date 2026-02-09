@@ -280,8 +280,34 @@ const Index = () => {
                   alt="Urea granules"
                   className="rounded-lg w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300"
                 />
-                <div className="mt-4 text-center">
-                  <p className="text-primary font-semibold text-lg">Гранулы белого цвета диаметром 2-4 мм</p>
+                <div className="mt-6 space-y-4">
+                  <div className="text-center border-b pb-4">
+                    <p className="text-primary font-bold text-xl mb-2">Гранулы белого цвета диаметром 2-4 мм</p>
+                    <p className="text-muted-foreground text-sm">Идеальная форма для всех видов применения</p>
+                  </div>
+                  <div className="grid grid-cols-2 gap-4">
+                    <div className="bg-muted/50 p-4 rounded-lg text-center">
+                      <Icon name="Eye" className="mx-auto mb-2 text-accent" size={24} />
+                      <div className="text-xs text-muted-foreground mb-1">Внешний вид</div>
+                      <div className="font-semibold text-primary text-sm">Белый/серый</div>
+                    </div>
+                    <div className="bg-muted/50 p-4 rounded-lg text-center">
+                      <Icon name="Maximize2" className="mx-auto mb-2 text-accent" size={24} />
+                      <div className="text-xs text-muted-foreground mb-1">Размер гранул</div>
+                      <div className="font-semibold text-primary text-sm">2-4 мм</div>
+                    </div>
+                  </div>
+                  <div className="bg-gradient-to-r from-accent/10 to-primary/10 p-4 rounded-lg">
+                    <div className="flex items-center gap-2 mb-2">
+                      <Icon name="CheckCircle2" className="text-accent" size={20} />
+                      <span className="font-semibold text-primary">Преимущества формы</span>
+                    </div>
+                    <ul className="text-sm text-muted-foreground space-y-1 ml-7">
+                      <li>• Равномерное распределение</li>
+                      <li>• Легкое растворение в воде</li>
+                      <li>• Минимальная пыль при хранении</li>
+                    </ul>
+                  </div>
                 </div>
               </Card>
 
