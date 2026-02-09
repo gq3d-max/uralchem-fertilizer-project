@@ -631,34 +631,56 @@ const Index = () => {
                 </Button>
               </form>
 
-              <div className="mt-8 pt-8 border-t grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-                <div className="flex items-start gap-3">
-                  <div className="w-10 h-10 bg-primary/10 rounded flex items-center justify-center flex-shrink-0">
-                    <Icon name="Mail" className="text-primary" size={20} />
+              <div className="mt-10 pt-8 border-t-2 border-muted">
+                <h3 className="text-xl font-bold text-primary mb-6 text-center">Наши контакты</h3>
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                  <div className="group">
+                    <div className="bg-gradient-to-br from-muted/50 to-muted/30 p-6 rounded-2xl border-2 border-border hover:border-accent/50 transition-all hover:shadow-lg hover:-translate-y-1">
+                      <div className="w-14 h-14 bg-gradient-to-br from-accent to-accent/80 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg group-hover:scale-110 transition-transform">
+                        <Icon name="Mail" className="text-white" size={24} />
+                      </div>
+                      <div className="text-center">
+                        <div className="text-xs uppercase tracking-wider text-muted-foreground font-semibold mb-2">Email</div>
+                        <a 
+                          href="mailto:alex@uralkhimpartnership.ru" 
+                          className="text-primary hover:text-accent transition-colors font-medium text-sm break-all"
+                        >
+                          alex@uralkhimpartnership.ru
+                        </a>
+                      </div>
+                    </div>
                   </div>
-                  <div>
-                    <div className="font-semibold text-primary text-sm">Email</div>
-                    <a href="mailto:alex@uralkhimpartnership.ru" className="text-sm text-muted-foreground hover:text-accent transition-colors">alex@uralkhimpartnership.ru</a>
-                  </div>
-                </div>
 
-                <div className="flex items-start gap-3">
-                  <div className="w-10 h-10 bg-primary/10 rounded flex items-center justify-center flex-shrink-0">
-                    <Icon name="Phone" className="text-primary" size={20} />
+                  <div className="group">
+                    <div className="bg-gradient-to-br from-muted/50 to-muted/30 p-6 rounded-2xl border-2 border-border hover:border-accent/50 transition-all hover:shadow-lg hover:-translate-y-1">
+                      <div className="w-14 h-14 bg-gradient-to-br from-primary to-primary/80 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg group-hover:scale-110 transition-transform">
+                        <Icon name="Phone" className="text-white" size={24} />
+                      </div>
+                      <div className="text-center">
+                        <div className="text-xs uppercase tracking-wider text-muted-foreground font-semibold mb-2">Телефон</div>
+                        <a 
+                          href="tel:+79337776062" 
+                          className="text-primary hover:text-accent transition-colors font-bold text-lg"
+                        >
+                          +7 933 777 60 62
+                        </a>
+                      </div>
+                    </div>
                   </div>
-                  <div>
-                    <div className="font-semibold text-primary text-sm">Телефон</div>
-                    <a href="tel:+79337776062" className="text-sm text-muted-foreground hover:text-accent transition-colors">+7 933 777 60 62</a>
-                  </div>
-                </div>
 
-                <div className="flex items-start gap-3">
-                  <div className="w-10 h-10 bg-primary/10 rounded flex items-center justify-center flex-shrink-0">
-                    <Icon name="MapPin" className="text-primary" size={20} />
-                  </div>
-                  <div>
-                    <div className="font-semibold text-primary text-sm">Офис</div>
-                    <div className="text-sm text-muted-foreground">Пресненская набережная, 6с2<br/>Москва, 123112</div>
+                  <div className="group">
+                    <div className="bg-gradient-to-br from-muted/50 to-muted/30 p-6 rounded-2xl border-2 border-border hover:border-accent/50 transition-all hover:shadow-lg hover:-translate-y-1">
+                      <div className="w-14 h-14 bg-gradient-to-br from-secondary to-secondary/80 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg group-hover:scale-110 transition-transform">
+                        <Icon name="MapPin" className="text-white" size={24} />
+                      </div>
+                      <div className="text-center">
+                        <div className="text-xs uppercase tracking-wider text-muted-foreground font-semibold mb-2">Офис</div>
+                        <div className="text-primary font-medium text-sm leading-relaxed">
+                          Пресненская набережная, 6с2<br/>
+                          <span className="text-muted-foreground">Москва, 123112</span>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
