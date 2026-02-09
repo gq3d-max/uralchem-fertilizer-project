@@ -390,21 +390,39 @@ const Index = () => {
                 </div>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div className="bg-white/10 backdrop-blur-sm p-6 rounded-2xl hover:bg-white/20 transition-all border border-white/20 hover:scale-105">
-                  <Icon name="Sprout" className="mb-4" size={36} />
-                  <h4 className="font-bold mb-2 text-xl">Почвенное внесение</h4>
-                  <p className="text-white/80 leading-relaxed">Основное и припосевное удобрение</p>
-                </div>
-                <div className="bg-white/10 backdrop-blur-sm p-6 rounded-2xl hover:bg-white/20 transition-all border border-white/20 hover:scale-105">
-                  <Icon name="Droplet" className="mb-4" size={36} />
-                  <h4 className="font-bold mb-2 text-xl">Капельный полив</h4>
-                  <p className="text-white/80 leading-relaxed">Идеально растворяется для фертигации</p>
-                </div>
-                <div className="bg-white/10 backdrop-blur-sm p-6 rounded-2xl hover:bg-white/20 transition-all border border-white/20 hover:scale-105">
-                  <Icon name="CloudRain" className="mb-4" size={36} />
-                  <h4 className="font-bold mb-2 text-xl">Внекорневая подкормка</h4>
-                  <p className="text-white/80 leading-relaxed">Быстрое усвоение через листья</p>
-                </div>
+                <Link to="/soil-application" className="block">
+                  <div className="bg-white/10 backdrop-blur-sm p-6 rounded-2xl hover:bg-white/20 transition-all border border-white/20 hover:scale-105 cursor-pointer h-full">
+                    <Icon name="Sprout" className="mb-4" size={36} />
+                    <h4 className="font-bold mb-2 text-xl">Почвенное внесение</h4>
+                    <p className="text-white/80 leading-relaxed mb-3">Основное и припосевное удобрение</p>
+                    <div className="flex items-center gap-2 text-sm">
+                      <span>Подробнее</span>
+                      <Icon name="ArrowRight" size={16} />
+                    </div>
+                  </div>
+                </Link>
+                <Link to="/drip-irrigation" className="block">
+                  <div className="bg-white/10 backdrop-blur-sm p-6 rounded-2xl hover:bg-white/20 transition-all border border-white/20 hover:scale-105 cursor-pointer h-full">
+                    <Icon name="Droplet" className="mb-4" size={36} />
+                    <h4 className="font-bold mb-2 text-xl">Капельный полив</h4>
+                    <p className="text-white/80 leading-relaxed mb-3">Идеально растворяется для фертигации</p>
+                    <div className="flex items-center gap-2 text-sm">
+                      <span>Подробнее</span>
+                      <Icon name="ArrowRight" size={16} />
+                    </div>
+                  </div>
+                </Link>
+                <Link to="/foliar-feeding" className="block">
+                  <div className="bg-white/10 backdrop-blur-sm p-6 rounded-2xl hover:bg-white/20 transition-all border border-white/20 hover:scale-105 cursor-pointer h-full">
+                    <Icon name="CloudRain" className="mb-4" size={36} />
+                    <h4 className="font-bold mb-2 text-xl">Внекорневая подкормка</h4>
+                    <p className="text-white/80 leading-relaxed mb-3">Быстрое усвоение через листья</p>
+                    <div className="flex items-center gap-2 text-sm">
+                      <span>Подробнее</span>
+                      <Icon name="ArrowRight" size={16} />
+                    </div>
+                  </div>
+                </Link>
               </div>
             </Card>
           </div>
