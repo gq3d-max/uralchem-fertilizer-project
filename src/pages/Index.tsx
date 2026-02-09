@@ -273,8 +273,8 @@ const Index = () => {
           </div>
 
           <div className="max-w-5xl mx-auto">
-            <div className="grid md:grid-cols-2 gap-8 mb-8">
-              <div className="relative group bg-white rounded-lg p-6 scroll-animate scroll-animate-delay-1">
+            <div className="grid md:grid-cols-2 gap-8 mb-8 items-stretch">
+              <Card className="relative group bg-white rounded-lg p-6 scroll-animate scroll-animate-delay-1 flex flex-col">
                 <img 
                   src="https://cdn.poehali.dev/projects/e2337ca5-ae7d-430a-b963-b32567a9167d/files/341aefe9-48d3-4d85-b1d7-cb0f236673f6.jpg"
                   alt="Urea granules"
@@ -283,9 +283,9 @@ const Index = () => {
                 <div className="mt-4 text-center">
                   <p className="text-primary font-semibold text-lg">Гранулы белого цвета диаметром 2-4 мм</p>
                 </div>
-              </div>
+              </Card>
 
-              <Card className="p-8 md:p-10 border-2 border-accent/30 hover:border-accent/60 transition-all bg-gradient-to-br from-card to-muted/20 shadow-lg scroll-animate scroll-animate-delay-2">
+              <Card className="p-8 md:p-10 border-2 border-accent/30 hover:border-accent/60 transition-all bg-gradient-to-br from-card to-muted/20 shadow-lg scroll-animate scroll-animate-delay-2 flex flex-col">
                 <h3 className="text-3xl font-bold text-primary mb-8">Технические характеристики</h3>
                 <div className="space-y-5">
                   <div className="flex justify-between items-center pb-4 border-b-2 border-border">
