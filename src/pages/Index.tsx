@@ -3,8 +3,76 @@ import { Card } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import Icon from "@/components/ui/icon";
+import { useState } from "react";
+import { useToast } from "@/hooks/use-toast";
 
 const Index = () => {
+  const { toast } = useToast();
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    company: '',
+    phone: '',
+    volume: '',
+    message: ''
+  });
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    
+    if (!formData.name || !formData.email) {
+      toast({
+        title: "Ошибка",
+        description: "Заполните обязательные поля",
+        variant: "destructive"
+      });
+      return;
+    }
+
+    setIsSubmitting(true);
+
+    try {
+      const response = await fetch('https://functions.poehali.dev/a6995de7-61fa-414a-b154-b95ec6578f90', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          company: formData.company,
+          message: `Телефон: ${formData.phone}\nОбъем: ${formData.volume} тонн\n\n${formData.message}`
+        })
+      });
+
+      if (response.ok) {
+        toast({
+          title: "Успешно!",
+          description: "Ваш запрос отправлен. Мы свяжемся с вами в ближайшее время."
+        });
+        setFormData({
+          name: '',
+          email: '',
+          company: '',
+          phone: '',
+          volume: '',
+          message: ''
+        });
+      } else {
+        throw new Error('Failed to send');
+      }
+    } catch (error) {
+      toast({
+        title: "Ошибка",
+        description: "Не удалось отправить запрос. Попробуйте позже.",
+        variant: "destructive"
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   return (
     <div className="min-h-screen bg-background">
       <nav className="fixed top-0 w-full bg-primary/95 backdrop-blur-sm z-50 border-b border-primary/20">
@@ -368,32 +436,60 @@ const Index = () => {
             </div>
 
             <Card className="p-8">
-              <form className="space-y-6">
+              <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
                     <label className="block text-sm font-semibold text-primary mb-2">Компания *</label>
-                    <Input placeholder="Название вашей компании" className="border-2" />
+                    <Input 
+                      placeholder="Название вашей компании" 
+                      className="border-2"
+                      value={formData.company}
+                      onChange={(e) => setFormData({...formData, company: e.target.value})}
+                    />
                   </div>
                   <div>
                     <label className="block text-sm font-semibold text-primary mb-2">Контактное лицо *</label>
-                    <Input placeholder="ФИО представителя" className="border-2" />
+                    <Input 
+                      placeholder="ФИО представителя" 
+                      className="border-2"
+                      required
+                      value={formData.name}
+                      onChange={(e) => setFormData({...formData, name: e.target.value})}
+                    />
                   </div>
                 </div>
 
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
                     <label className="block text-sm font-semibold text-primary mb-2">Email *</label>
-                    <Input type="email" placeholder="company@example.com" className="border-2" />
+                    <Input 
+                      type="email" 
+                      placeholder="company@example.com" 
+                      className="border-2"
+                      required
+                      value={formData.email}
+                      onChange={(e) => setFormData({...formData, email: e.target.value})}
+                    />
                   </div>
                   <div>
                     <label className="block text-sm font-semibold text-primary mb-2">Телефон *</label>
-                    <Input placeholder="+971 XX XXX XXXX" className="border-2" />
+                    <Input 
+                      placeholder="+971 XX XXX XXXX" 
+                      className="border-2"
+                      value={formData.phone}
+                      onChange={(e) => setFormData({...formData, phone: e.target.value})}
+                    />
                   </div>
                 </div>
 
                 <div>
                   <label className="block text-sm font-semibold text-primary mb-2">Объем поставки (тонн) *</label>
-                  <Input placeholder="Укажите требуемый объем" className="border-2" />
+                  <Input 
+                    placeholder="Укажите требуемый объем" 
+                    className="border-2"
+                    value={formData.volume}
+                    onChange={(e) => setFormData({...formData, volume: e.target.value})}
+                  />
                 </div>
 
                 <div>
@@ -401,12 +497,18 @@ const Index = () => {
                   <Textarea 
                     placeholder="Укажите дополнительную информацию о вашем запросе..." 
                     className="min-h-32 border-2"
+                    value={formData.message}
+                    onChange={(e) => setFormData({...formData, message: e.target.value})}
                   />
                 </div>
 
-                <Button className="w-full bg-accent hover:bg-accent/90 text-white py-6 text-lg">
+                <Button 
+                  type="submit"
+                  disabled={isSubmitting}
+                  className="w-full bg-accent hover:bg-accent/90 text-white py-6 text-lg"
+                >
                   <Icon name="Send" className="mr-2" size={20} />
-                  Отправить запрос на коммерческое предложение
+                  {isSubmitting ? 'Отправка...' : 'Отправить запрос на коммерческое предложение'}
                 </Button>
               </form>
 
