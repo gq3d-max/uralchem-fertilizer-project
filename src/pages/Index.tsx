@@ -200,9 +200,7 @@ const Index = () => {
                   </div>
                   <div>
                     <h3 className="text-xl font-bold text-primary mb-2">Логистика FOB</h3>
-                    <p className="text-muted-foreground">
-                      Отгрузка из порта Новороссийск с полным документальным сопровождением
-                    </p>
+                    <p className="text-muted-foreground">Отгрузка из порта Санкт-Петербург и Новороссийск с полным документальным сопровождением</p>
                   </div>
                 </div>
               </Card>
