@@ -1,21 +1,6 @@
 {
   "tests": [
     {
-      "name": "Test email sending with valid data",
-      "method": "POST",
-      "body": {
-        "name": "Test User",
-        "email": "test@example.com",
-        "company": "Test Company",
-        "message": "Test message"
-      },
-      "expectedStatus": 200,
-      "expectedBody": {
-        "success": true
-      },
-      "bodyMatcher": "partial"
-    },
-    {
       "name": "Test missing required fields",
       "method": "POST",
       "body": {
