@@ -161,9 +161,9 @@ const Index = () => {
                 alt="Urea big bags storage"
                 className="rounded-3xl shadow-2xl border-8 border-white/50 w-full h-auto"
               />
-              <div className="absolute -bottom-6 -right-6 bg-gradient-to-br from-accent to-accent/90 p-6 md:p-8 rounded-2xl shadow-2xl border-4 border-white">
-                <div className="text-white text-2xl md:text-3xl font-bold mb-1">От $330</div>
-                <div className="text-white/90 text-base md:text-lg font-medium">за тонну FOB</div>
+              <div className="absolute -bottom-4 -right-4 bg-gradient-to-br from-accent to-accent/90 p-4 md:p-5 rounded-xl shadow-2xl border-3 border-white">
+                <div className="text-white text-lg md:text-xl font-bold mb-0.5">От $330</div>
+                <div className="text-white/90 text-sm md:text-base font-medium">за тонну FOB</div>
               </div>
             </div>
           </div>
