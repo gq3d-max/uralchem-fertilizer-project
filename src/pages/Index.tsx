@@ -18,12 +18,18 @@ const Index = () => {
               <p className="text-xs text-white/80">UralKhim Partner</p>
             </div>
           </div>
-          <div className="hidden md:flex gap-6">
-            <a href="#home" className="text-white hover:text-accent transition-colors">Главная</a>
-            <a href="#about" className="text-white hover:text-accent transition-colors">О компании</a>
-            <a href="#product" className="text-white hover:text-accent transition-colors">Продукция</a>
-            <a href="#delivery" className="text-white hover:text-accent transition-colors">Условия</a>
-            <a href="#contact" className="text-white hover:text-accent transition-colors">Контакты</a>
+          <div className="flex items-center gap-6">
+            <div className="hidden md:flex gap-6">
+              <a href="#home" className="text-white hover:text-accent transition-colors">Главная</a>
+              <a href="#about" className="text-white hover:text-accent transition-colors">О компании</a>
+              <a href="#product" className="text-white hover:text-accent transition-colors">Продукция</a>
+              <a href="#delivery" className="text-white hover:text-accent transition-colors">Условия</a>
+              <a href="#contact" className="text-white hover:text-accent transition-colors">Контакты</a>
+            </div>
+            <a href="tel:+79337776062" className="flex items-center gap-2 text-white hover:text-accent transition-colors">
+              <Icon name="Phone" size={18} />
+              <span className="font-semibold">+7 933 777 60 62</span>
+            </a>
           </div>
         </div>
       </nav>
@@ -421,7 +427,7 @@ const Index = () => {
                   </div>
                   <div>
                     <div className="font-semibold text-primary text-sm">Телефон</div>
-                    <div className="text-sm text-muted-foreground">+971 4 XXX XXXX</div>
+                    <a href="tel:+79337776062" className="text-sm text-muted-foreground hover:text-accent transition-colors">+7 933 777 60 62</a>
                   </div>
                 </div>
 
@@ -439,6 +445,16 @@ const Index = () => {
           </div>
         </div>
       </section>
+
+      <a
+        href="https://wa.me/79337776062"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="fixed bottom-6 right-6 z-50 w-16 h-16 bg-[#25D366] hover:bg-[#128C7E] text-white rounded-full shadow-2xl flex items-center justify-center transition-all hover:scale-110 animate-bounce"
+        aria-label="WhatsApp"
+      >
+        <Icon name="MessageCircle" size={32} />
+      </a>
 
       <footer className="bg-primary py-8 text-white">
         <div className="container mx-auto px-4">
