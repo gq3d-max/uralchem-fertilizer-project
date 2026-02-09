@@ -157,8 +157,8 @@ const Index = () => {
             <div className="relative animate-scale-in max-w-full">
               <div className="absolute inset-0 bg-gradient-to-br from-accent/20 to-primary/20 rounded-3xl blur-3xl -z-10 transform scale-105"></div>
               <img 
-                src="https://cdn.poehali.dev/projects/e2337ca5-ae7d-430a-b963-b32567a9167d/files/6f7ef9f5-24fe-4f48-aee3-1d04c9e73d99.jpg" 
-                alt="Industrial facility"
+                src="https://cdn.poehali.dev/projects/e2337ca5-ae7d-430a-b963-b32567a9167d/bucket/4e696be6-c191-4b66-871d-4f76f9c4f462.jpg" 
+                alt="Urea big bags storage"
                 className="rounded-3xl shadow-2xl border-8 border-white/50 w-full h-auto"
               />
               <div className="absolute -bottom-6 -right-6 bg-gradient-to-br from-accent to-accent/90 p-6 md:p-8 rounded-2xl shadow-2xl border-4 border-white">
