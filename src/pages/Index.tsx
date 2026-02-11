@@ -139,9 +139,9 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
             <div className="text-center mb-12 text-white scroll-animate">
-              <h2 className="text-2xl md:text-4xl font-bold mb-4">Свяжитесь с нами</h2>
+              <h2 className="text-2xl md:text-4xl font-bold mb-4">Запрос на экспорт удобрений</h2>
               <div className="w-24 h-1 bg-accent mx-auto mb-6"></div>
-              <p className="text-lg text-white/90">Готовы обсудить условия поставки азотных удобрений</p>
+              <p className="text-lg text-white/90">Дистрибьютор промышленных удобрений на экспорт. B2B поставка калийных, азотных и фосфорных удобрений</p>
             </div>
 
             <Card className="p-8 scroll-animate scroll-animate-delay-1">

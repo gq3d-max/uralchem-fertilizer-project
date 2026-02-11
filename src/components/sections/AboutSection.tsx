@@ -8,10 +8,10 @@ const AboutSection = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16 scroll-animate">
-            <h2 className="text-3xl md:text-5xl font-bold text-primary mb-5">О компании FertiGlobal Emirates</h2>
+            <h2 className="text-3xl md:text-5xl font-bold text-primary mb-5">Экспортер удобрений FertiGlobal Emirates</h2>
             <div className="w-20 h-1.5 bg-gradient-to-r from-transparent via-accent to-transparent mx-auto mb-6"></div>
             <p className="text-xl text-muted-foreground font-light max-w-3xl mx-auto">
-              Официальный дистрибьютор азотных удобрений производства УралХим
+              Поставщик удобрений для экспорта. Международные поставки минеральных удобрений и агрохимии производства УралХим
             </p>
           </div>
           
@@ -23,9 +23,9 @@ const AboutSection = () => {
                     <Icon name="Building2" className="text-white" size={28} />
                   </div>
                   <div>
-                    <h3 className="text-2xl font-bold text-primary mb-3 group-hover:text-accent transition-colors">Партнерство с УралХим</h3>
+                    <h3 className="text-2xl font-bold text-primary mb-3 group-hover:text-accent transition-colors">Контрактные поставки удобрений</h3>
                     <p className="text-muted-foreground leading-relaxed">
-                      Прямые контракты с крупнейшим российским производителем минеральных удобрений
+                      Прямые контракты на экспорт азотных, фосфорных и комплексных удобрений ГОСТ с крупнейшим российским производителем
                     </p>
                     <div className="flex items-center gap-2 mt-3 text-accent font-medium">
                       <span>Подробнее</span>
@@ -63,8 +63,8 @@ const AboutSection = () => {
                     <Icon name="Ship" className="text-white" size={28} />
                   </div>
                   <div>
-                    <h3 className="text-2xl font-bold text-primary mb-3 group-hover:text-accent transition-colors">Логистика FOB</h3>
-                    <p className="text-muted-foreground leading-relaxed">Отгрузка из порта Санкт-Петербург и Новороссийск с полным документальным сопровождением</p>
+                    <h3 className="text-2xl font-bold text-primary mb-3 group-hover:text-accent transition-colors">Логистика экспорта удобрений</h3>
+                    <p className="text-muted-foreground leading-relaxed">Морская и железнодорожная перевозка удобрений FOB из портов Санкт-Петербург и Новороссийск</p>
                     <div className="flex items-center gap-2 mt-3 text-accent font-medium">
                       <span>Подробнее</span>
                       <Icon name="ArrowRight" size={18} />
@@ -81,9 +81,9 @@ const AboutSection = () => {
                     <Icon name="Shield" className="text-white" size={28} />
                   </div>
                   <div>
-                    <h3 className="text-2xl font-bold text-primary mb-3 group-hover:text-accent transition-colors">Гарантии качества</h3>
+                    <h3 className="text-2xl font-bold text-primary mb-3 group-hover:text-accent transition-colors">Сертификация для экспорта</h3>
                     <p className="text-muted-foreground leading-relaxed">
-                      Сертификаты соответствия и лабораторные анализы для каждой партии
+                      Экспорт удобрений с паспортом качества. Сертификация удобрений ГОСТ и международные стандарты для каждой партии
                     </p>
                     <div className="flex items-center gap-2 mt-3 text-accent font-medium">
                       <span>Подробнее</span>

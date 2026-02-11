@@ -9,14 +9,14 @@ const HeroSection = () => {
           <div className="animate-fade-in">
             <div className="inline-flex items-center gap-2 px-5 py-2.5 bg-accent/10 border border-accent/20 rounded-full mb-8">
               <div className="w-2 h-2 bg-accent rounded-full animate-pulse"></div>
-              <span className="text-accent font-semibold text-sm tracking-wide">Поставки из России</span>
+              <span className="text-accent font-semibold text-sm tracking-wide">Экспорт удобрений из России</span>
             </div>
             <h2 className="md:text-6xl lg:text-7xl font-bold mb-6 leading-[1.1] text-primary text-5xl text-left">
-              Азотные удобрения<br />
-              <span className="bg-gradient-to-r from-accent to-accent/70 bg-clip-text text-transparent text-5xl">мирового класса</span>
+              Экспорт минеральных удобрений<br />
+              <span className="bg-gradient-to-r from-accent to-accent/70 bg-clip-text text-transparent text-5xl">на международные рынки</span>
             </h2>
             <p className="text-xl md:text-2xl mb-10 text-muted-foreground font-light leading-relaxed">
-              Прямые поставки UralNitro Pro 46 от производителя УралХим через нашу компанию в Дубае
+              Дистрибьютор азотных удобрений УралХим. Оптовый экспорт карбамида и промышленных удобрений для B2B клиентов
             </p>
             <div className="grid grid-cols-3 gap-4 md:gap-6 mb-10">
               <div className="bg-card border-2 border-accent/20 p-4 md:p-6 rounded-2xl hover:shadow-xl hover:border-accent/40 transition-all hover:-translate-y-1">

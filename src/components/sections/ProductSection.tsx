@@ -7,9 +7,9 @@ const ProductSection = () => {
     <section id="product" className="py-20 bg-gradient-to-b from-muted/20 to-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 scroll-animate">
-          <h2 className="text-3xl md:text-5xl font-bold text-primary mb-5">UralNitro Pro 46</h2>
+          <h2 className="text-3xl md:text-5xl font-bold text-primary mb-5">Экспорт карбамида UralNitro Pro 46</h2>
           <div className="w-20 h-1.5 bg-gradient-to-r from-transparent via-accent to-transparent mx-auto mb-6"></div>
-          <p className="text-xl text-muted-foreground font-light">Гранулированная карбамидная мочевина высшего качества</p>
+          <p className="text-xl text-muted-foreground font-light">Экспорт NPK удобрений и аммиачной селитры. Оптовая поставка удобрений на экспорт для B2B рынка</p>
         </div>
 
         <div className="max-w-5xl mx-auto">

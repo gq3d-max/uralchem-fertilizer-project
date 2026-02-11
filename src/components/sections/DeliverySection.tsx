@@ -6,9 +6,9 @@ const DeliverySection = () => {
     <section id="delivery" className="py-16 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12 scroll-animate">
-          <h2 className="text-2xl md:text-4xl font-bold text-primary mb-4">Условия поставки</h2>
+          <h2 className="text-2xl md:text-4xl font-bold text-primary mb-4">Условия экспорта удобрений оптом</h2>
           <div className="w-24 h-1 bg-accent mx-auto mb-6"></div>
-          <p className="text-lg text-muted-foreground">Прозрачные условия работы с фиксированными сроками</p>
+          <p className="text-lg text-muted-foreground">Поставка удобрений на экспорт с прозрачными условиями и фиксированными сроками для международных рынков</p>
         </div>
 
         <div className="max-w-5xl mx-auto">
