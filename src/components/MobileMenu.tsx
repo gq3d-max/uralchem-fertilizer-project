@@ -41,10 +41,10 @@ const MobileMenu = ({ currentPage = "home" }: MobileMenuProps) => {
       {isOpen && (
         <>
           <div
-            className="fixed inset-0 bg-black/50 z-40 md:hidden"
+            className="fixed inset-0 bg-black/20 z-40 md:hidden"
             onClick={() => setIsOpen(false)}
           />
-          <div className="fixed top-[76px] left-0 right-0 bg-white border-b border-border shadow-xl z-50 md:hidden animate-slide-down">
+          <div className="fixed top-[76px] left-0 right-0 bg-white/70 backdrop-blur-md border-b border-border/30 shadow-lg z-50 md:hidden animate-slide-down">
             <nav className="container mx-auto px-4 py-6">
               <div className="flex flex-col gap-4">
                 {menuItems.map((item) => (
