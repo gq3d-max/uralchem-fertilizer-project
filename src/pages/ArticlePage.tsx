@@ -1,5 +1,7 @@
 import { Link, useParams } from "react-router-dom";
 import Icon from "@/components/ui/icon";
+import WhatsAppButton from "@/components/WhatsAppButton";
+import PageNav from "@/components/PageNav";
 
 const ArticlePage = () => {
   const { slug } = useParams();
@@ -159,29 +161,7 @@ const ArticlePage = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      <nav className="fixed top-0 w-full bg-white/80 backdrop-blur-xl z-50 border-b border-border/50 shadow-sm">
-        <div className="container mx-auto px-4 py-5 flex justify-between items-center">
-          <Link to="/" className="flex items-center gap-3">
-            <div className="w-10 h-10 md:w-12 md:h-12 bg-gradient-to-br from-accent to-accent/80 rounded-xl flex items-center justify-center shadow-lg">
-              <Icon name="Leaf" className="text-white" size={24} />
-            </div>
-            <div>
-              <h1 className="text-lg md:text-2xl font-bold text-primary tracking-tight">FertiGlobal Emirates</h1>
-              <p className="text-xs text-muted-foreground hidden sm:block font-medium">UralKhim Partner</p>
-            </div>
-          </Link>
-          <div className="flex items-center gap-3 md:gap-8">
-            <Link to="/info" className="text-foreground hover:text-accent transition-all font-medium hover:scale-105 hidden md:block">
-              Назад к статьям
-            </Link>
-            <a href="tel:+79337776062" className="flex items-center gap-2 text-accent hover:text-accent/80 transition-all whitespace-nowrap font-semibold hover:scale-105">
-              <Icon name="Phone" size={18} className="md:hidden flex-shrink-0" />
-              <Icon name="Phone" size={20} className="hidden md:block flex-shrink-0" />
-              <span className="text-sm md:text-base">+7 933 777 60 62</span>
-            </a>
-          </div>
-        </div>
-      </nav>
+      <PageNav currentPage="article" />
 
       <article className="pt-32 pb-20 bg-gradient-to-br from-background via-muted/30 to-background">
         <div className="container mx-auto px-4">
@@ -274,6 +254,8 @@ const ArticlePage = () => {
           </div>
         </div>
       </footer>
+
+      <WhatsAppButton />
     </div>
   );
 };

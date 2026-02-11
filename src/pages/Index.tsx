@@ -6,6 +6,8 @@ import Icon from "@/components/ui/icon";
 import { useState, useEffect } from "react";
 import { useToast } from "@/hooks/use-toast";
 import { Link } from "react-router-dom";
+import WhatsAppButton from "@/components/WhatsAppButton";
+import MobileMenu from "@/components/MobileMenu";
 
 const Index = () => {
   const { toast } = useToast();
@@ -115,11 +117,11 @@ const Index = () => {
               <Link to="/info" className="text-foreground hover:text-accent transition-all font-medium hover:scale-105">Полезная информация</Link>
               <a href="#contact" className="text-foreground hover:text-accent transition-all font-medium hover:scale-105">Контакты</a>
             </div>
-            <a href="tel:+79337776062" className="flex items-center gap-2 text-accent hover:text-accent/80 transition-all whitespace-nowrap font-semibold hover:scale-105">
-              <Icon name="Phone" size={18} className="md:hidden flex-shrink-0" />
-              <Icon name="Phone" size={20} className="hidden md:block flex-shrink-0" />
-              <span className="text-sm md:text-base">+7 933 777 60 62</span>
+            <a href="tel:+79337776062" className="hidden md:flex items-center gap-2 text-accent hover:text-accent/80 transition-all whitespace-nowrap font-semibold hover:scale-105">
+              <Icon name="Phone" size={20} />
+              <span className="text-base">+7 933 777 60 62</span>
             </a>
+            <MobileMenu currentPage="home" />
           </div>
         </div>
       </nav>
@@ -690,15 +692,7 @@ const Index = () => {
         </div>
       </section>
 
-      <a
-        href="https://wa.me/79337776062"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="fixed bottom-24 right-6 z-40 w-14 h-14 bg-[#25D366]/80 hover:bg-[#25D366] backdrop-blur-sm text-white rounded-full shadow-lg flex items-center justify-center transition-all hover:scale-105"
-        aria-label="WhatsApp"
-      >
-        <Icon name="MessageCircle" size={28} />
-      </a>
+      <WhatsAppButton />
 
       <footer className="bg-primary py-8 text-white">
         <div className="container mx-auto px-4">

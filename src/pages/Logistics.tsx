@@ -1,8 +1,8 @@
-import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import Icon from "@/components/ui/icon";
-import { Link } from "react-router-dom";
 import { useEffect } from "react";
+import WhatsAppButton from "@/components/WhatsAppButton";
+import PageNav from "@/components/PageNav";
 
 const Logistics = () => {
   useEffect(() => {
@@ -26,25 +26,7 @@ const Logistics = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      <nav className="fixed top-0 w-full bg-white/80 backdrop-blur-xl z-50 border-b border-border/50 shadow-sm">
-        <div className="container mx-auto px-4 py-5 flex justify-between items-center">
-          <Link to="/" className="flex items-center gap-3">
-            <div className="w-10 h-10 md:w-12 md:h-12 bg-gradient-to-br from-accent to-accent/80 rounded-xl flex items-center justify-center shadow-lg">
-              <Icon name="Leaf" className="text-white" size={24} />
-            </div>
-            <div>
-              <h1 className="text-lg md:text-2xl font-bold text-primary tracking-tight">FertiGlobal Emirates</h1>
-              <p className="text-xs text-muted-foreground hidden sm:block font-medium">UralKhim Partner</p>
-            </div>
-          </Link>
-          <Link to="/">
-            <Button variant="outline" className="gap-2">
-              <Icon name="ArrowLeft" size={18} />
-              <span className="hidden sm:inline">На главную</span>
-            </Button>
-          </Link>
-        </div>
-      </nav>
+      <PageNav currentPage="logistics" />
 
       <section className="pt-32 pb-20 bg-gradient-to-br from-background via-muted/30 to-background">
         <div className="container mx-auto px-4">
@@ -243,6 +225,8 @@ const Logistics = () => {
           </div>
         </div>
       </section>
+
+      <WhatsAppButton />
     </div>
   );
 };

@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import Icon from "@/components/ui/icon";
+import WhatsAppButton from "@/components/WhatsAppButton";
+import MobileMenu from "@/components/MobileMenu";
 
 const Info = () => {
   const articles = [
@@ -32,14 +34,14 @@ const Info = () => {
             </div>
           </Link>
           <div className="flex items-center gap-3 md:gap-8">
-            <Link to="/" className="text-foreground hover:text-accent transition-all font-medium hover:scale-105">
+            <Link to="/" className="hidden md:block text-foreground hover:text-accent transition-all font-medium hover:scale-105">
               На главную
             </Link>
-            <a href="tel:+79337776062" className="flex items-center gap-2 text-accent hover:text-accent/80 transition-all whitespace-nowrap font-semibold hover:scale-105">
-              <Icon name="Phone" size={18} className="md:hidden flex-shrink-0" />
-              <Icon name="Phone" size={20} className="hidden md:block flex-shrink-0" />
-              <span className="text-sm md:text-base">+7 933 777 60 62</span>
+            <a href="tel:+79337776062" className="hidden md:flex items-center gap-2 text-accent hover:text-accent/80 transition-all whitespace-nowrap font-semibold hover:scale-105">
+              <Icon name="Phone" size={20} />
+              <span className="text-base">+7 933 777 60 62</span>
             </a>
+            <MobileMenu currentPage="info" />
           </div>
         </div>
       </nav>
@@ -116,6 +118,8 @@ const Info = () => {
           </div>
         </div>
       </footer>
+
+      <WhatsAppButton />
     </div>
   );
 };
