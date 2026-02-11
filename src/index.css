@@ -140,6 +140,11 @@
     @apply border-border;
   }
 
+  html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+
   body {
     @apply bg-background text-foreground;
     font-family:
@@ -150,10 +155,6 @@
     overflow-x: hidden;
     font-feature-settings: "cv02", "cv03", "cv04", "cv11";
     letter-spacing: -0.01em;
-  }
-
-  html {
-    overflow-x: hidden;
   }
 
   h1,
