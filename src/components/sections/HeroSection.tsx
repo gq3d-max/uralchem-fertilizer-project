@@ -14,6 +14,18 @@ const HeroSection = () => {
     {
       url: "https://cdn.poehali.dev/projects/e2337ca5-ae7d-430a-b963-b32567a9167d/bucket/f8e0f75b-dc1b-4d00-95dd-aaca8f596f7b.jpg",
       alt: "Big bags loading at port"
+    },
+    {
+      url: "https://cdn.poehali.dev/projects/e2337ca5-ae7d-430a-b963-b32567a9167d/bucket/96b7cb42-43a0-4bfe-99b0-a5aca6b58f08.jpg",
+      alt: "Tractor applying fertilizer to field"
+    },
+    {
+      url: "https://cdn.poehali.dev/projects/e2337ca5-ae7d-430a-b963-b32567a9167d/bucket/7c38279c-50ce-4224-9fdc-98015890834a.jpg",
+      alt: "Fertilizer warehouse with crane"
+    },
+    {
+      url: "https://cdn.poehali.dev/projects/e2337ca5-ae7d-430a-b963-b32567a9167d/bucket/9b23bbf0-d518-4a28-8ead-279cd6fe2db6.jpg",
+      alt: "Fertilizer production facility"
     }
   ];
 
