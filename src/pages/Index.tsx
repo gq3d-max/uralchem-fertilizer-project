@@ -112,6 +112,7 @@ const Index = () => {
               <a href="#about" className="text-foreground hover:text-accent transition-all font-medium hover:scale-105">О компании</a>
               <a href="#product" className="text-foreground hover:text-accent transition-all font-medium hover:scale-105">Продукция</a>
               <a href="#delivery" className="text-foreground hover:text-accent transition-all font-medium hover:scale-105">Условия</a>
+              <Link to="/info" className="text-foreground hover:text-accent transition-all font-medium hover:scale-105">Полезная информация</Link>
               <a href="#contact" className="text-foreground hover:text-accent transition-all font-medium hover:scale-105">Контакты</a>
             </div>
             <a href="tel:+79337776062" className="flex items-center gap-2 text-accent hover:text-accent/80 transition-all whitespace-nowrap font-semibold hover:scale-105">
