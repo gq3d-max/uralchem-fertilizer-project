@@ -6,6 +6,22 @@ import PageNav from "@/components/PageNav";
 const ArticlePage = () => {
   const { slug } = useParams();
 
+  const articlesList = [
+    { id: 1, title: "Значение водного аммиака в индустрии и сельском хозяйстве", slug: "ammonia-importance" },
+    { id: 2, title: "Гидрофобизаторы - что это и для чего нужны", slug: "hydrophobizers" },
+    { id: 3, title: "Где используется пропиленгликоль", slug: "propylene-glycol" },
+    { id: 4, title: "Промышленный биосинтез аминокислот: основные понятия", slug: "amino-acids-biosynthesis" },
+    { id: 5, title: "Чем отличаются неорганическая и органическая химия", slug: "chemistry-types" },
+    { id: 6, title: "Химические реагенты", slug: "chemical-reagents" },
+    { id: 7, title: "Пояснение к единице измерения МЕШ (mesh)", slug: "mesh-unit" },
+    { id: 8, title: "Подробнее о ТАНК-контейнерах", slug: "tank-containers" },
+    { id: 9, title: "Подробнее о IBC-контейнерах", slug: "ibc-containers" },
+    { id: 10, title: "Типы паллет и их использование", slug: "pallet-types" },
+    { id: 11, title: "Размеры используемых крытых железнодорожных вагонов", slug: "railway-wagons" },
+    { id: 12, title: "Таблица пищевых добавок E", slug: "food-additives" },
+    { id: 13, title: "Правила перевозки опасных грузов автомобильным транспортом", slug: "dangerous-goods-transport" },
+  ];
+
   const articles: Record<string, { title: string; content: string[] }> = {
     "ammonia-importance": {
       title: "Значение водного аммиака в индустрии и сельском хозяйстве",
@@ -145,6 +161,8 @@ const ArticlePage = () => {
   };
 
   const article = slug ? articles[slug] : null;
+  const currentIndex = articlesList.findIndex(a => a.slug === slug);
+  const nextArticle = currentIndex >= 0 && currentIndex < articlesList.length - 1 ? articlesList[currentIndex + 1] : null;
 
   if (!article) {
     return (
@@ -214,6 +232,27 @@ const ArticlePage = () => {
                   </div>
                 </div>
               </div>
+
+              {nextArticle && (
+                <div className="mt-8 pt-8 border-t border-border">
+                  <Link 
+                    to={`/info/${nextArticle.slug}`}
+                    className="block bg-gradient-to-r from-primary/5 to-accent/5 border-2 border-primary/20 hover:border-accent/40 rounded-xl p-6 transition-all hover:shadow-lg group"
+                  >
+                    <div className="flex items-center justify-between gap-4">
+                      <div className="flex-1">
+                        <div className="text-sm font-semibold text-accent mb-2">Читать далее</div>
+                        <h3 className="text-lg md:text-xl font-bold text-primary group-hover:text-accent transition-colors">
+                          {nextArticle.title}
+                        </h3>
+                      </div>
+                      <div className="flex-shrink-0 w-10 h-10 bg-accent/10 rounded-lg flex items-center justify-center group-hover:bg-accent/20 transition-all">
+                        <Icon name="ArrowRight" className="text-accent" size={24} />
+                      </div>
+                    </div>
+                  </Link>
+                </div>
+              )}
             </div>
           </div>
         </div>
