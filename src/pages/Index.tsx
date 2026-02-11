@@ -105,7 +105,7 @@ const Index = () => {
         <div className="container mx-auto px-4 py-5 flex justify-between items-center">
           <div className="flex items-center gap-3">
             <img 
-              src="https://cdn.poehali.dev/projects/e2337ca5-ae7d-430a-b963-b32567a9167d/bucket/88a6d201-533b-4002-8275-234a0fb21f06.jpg" 
+              src="https://cdn.poehali.dev/files/ddaba7c8-6431-4533-bd4c-bf3041df7f4e.jpg" 
               alt="FertiGlobal Emirates Logo" 
               className="h-10 md:h-14 w-auto object-contain"
             />
