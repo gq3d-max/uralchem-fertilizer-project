@@ -104,9 +104,11 @@ const Index = () => {
       <nav className="fixed top-0 w-full bg-white/80 backdrop-blur-xl z-50 border-b border-border/50 shadow-sm">
         <div className="container mx-auto px-4 py-5 flex justify-between items-center">
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 md:w-12 md:h-12 bg-gradient-to-br from-accent to-accent/80 rounded-xl flex items-center justify-center shadow-lg">
-              <Icon name="Leaf" className="text-white" size={24} />
-            </div>
+            <img 
+              src="https://cdn.poehali.dev/projects/e2337ca5-ae7d-430a-b963-b32567a9167d/bucket/88a6d201-533b-4002-8275-234a0fb21f06.jpg" 
+              alt="FertiGlobal Emirates Logo" 
+              className="h-10 md:h-14 w-auto object-contain"
+            />
             <div>
               <h1 className="text-lg md:text-2xl font-bold text-primary tracking-tight">FertiGlobal Emirates</h1>
               <p className="text-xs text-muted-foreground hidden sm:block font-medium">UralKhim Partner</p>
@@ -135,16 +137,16 @@ const Index = () => {
       <ProductSection />
       <DeliverySection />
 
-      <section id="contact" className="py-16 bg-gradient-to-br from-primary via-secondary to-primary">
+      <section id="contact" className="py-12 md:py-16 bg-gradient-to-br from-primary via-secondary to-primary">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
-            <div className="text-center mb-12 text-white scroll-animate">
-              <h2 className="text-2xl md:text-4xl font-bold mb-4">Запрос на экспорт удобрений</h2>
-              <div className="w-24 h-1 bg-accent mx-auto mb-6"></div>
-              <p className="text-lg text-white/90">Дистрибьютор промышленных удобрений на экспорт. B2B поставка калийных, азотных и фосфорных удобрений</p>
+            <div className="text-center mb-8 md:mb-12 text-white scroll-animate">
+              <h2 className="text-xl md:text-3xl lg:text-4xl font-bold mb-3 md:mb-4">Запрос на экспорт удобрений</h2>
+              <div className="w-20 md:w-24 h-1 bg-accent mx-auto mb-4 md:mb-6"></div>
+              <p className="text-base md:text-lg text-white/90">Дистрибьютор промышленных удобрений на экспорт. B2B поставка калийных, азотных и фосфорных удобрений</p>
             </div>
 
-            <Card className="p-8 scroll-animate scroll-animate-delay-1">
+            <Card className="p-4 md:p-6 lg:p-8 scroll-animate scroll-animate-delay-1">
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>

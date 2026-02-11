@@ -3,16 +3,16 @@ import Icon from "@/components/ui/icon";
 
 const DeliverySection = () => {
   return (
-    <section id="delivery" className="py-16 bg-background">
+    <section id="delivery" className="py-12 md:py-16 bg-background">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-12 scroll-animate">
-          <h2 className="text-2xl md:text-4xl font-bold text-primary mb-4">Условия экспорта удобрений оптом</h2>
-          <div className="w-24 h-1 bg-accent mx-auto mb-6"></div>
-          <p className="text-lg text-muted-foreground">Поставка удобрений на экспорт с прозрачными условиями и фиксированными сроками для международных рынков</p>
+        <div className="text-center mb-8 md:mb-12 scroll-animate">
+          <h2 className="text-xl md:text-3xl lg:text-4xl font-bold text-primary mb-3 md:mb-4">Условия экспорта удобрений оптом</h2>
+          <div className="w-20 md:w-24 h-1 bg-accent mx-auto mb-4 md:mb-6"></div>
+          <p className="text-base md:text-lg text-muted-foreground">Поставка удобрений на экспорт с прозрачными условиями и фиксированными сроками для международных рынков</p>
         </div>
 
         <div className="max-w-5xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 mb-8 md:mb-12">
             <Card className="p-6 text-center border-t-4 border-accent hover:shadow-xl transition-shadow scroll-animate scroll-animate-delay-1">
               <div className="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Icon name="DollarSign" className="text-accent" size={32} />

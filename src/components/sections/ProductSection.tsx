@@ -4,16 +4,16 @@ import { Link } from "react-router-dom";
 
 const ProductSection = () => {
   return (
-    <section id="product" className="py-20 bg-gradient-to-b from-muted/20 to-background">
+    <section id="product" className="py-12 md:py-16 lg:py-20 bg-gradient-to-b from-muted/20 to-background">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16 scroll-animate">
-          <h2 className="text-3xl md:text-5xl font-bold text-primary mb-5">Экспорт карбамида UralNitro Pro 46</h2>
-          <div className="w-20 h-1.5 bg-gradient-to-r from-transparent via-accent to-transparent mx-auto mb-6"></div>
-          <p className="text-xl text-muted-foreground font-light">Экспорт NPK удобрений и аммиачной селитры. Оптовая поставка удобрений на экспорт для B2B рынка</p>
+        <div className="text-center mb-10 md:mb-16 scroll-animate">
+          <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-primary mb-3 md:mb-5">Экспорт карбамида UralNitro Pro 46</h2>
+          <div className="w-16 md:w-20 h-1.5 bg-gradient-to-r from-transparent via-accent to-transparent mx-auto mb-4 md:mb-6"></div>
+          <p className="text-base md:text-lg lg:text-xl text-muted-foreground font-light">Экспорт NPK удобрений и аммиачной селитры. Оптовая поставка удобрений на экспорт для B2B рынка</p>
         </div>
 
         <div className="max-w-5xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-8 mb-8 items-stretch">
+          <div className="grid md:grid-cols-2 gap-4 md:gap-6 lg:gap-8 mb-6 md:mb-8 items-stretch">
             <Card className="relative group bg-white rounded-lg p-6 scroll-animate scroll-animate-delay-1 flex flex-col">
               <img 
                 src="https://cdn.poehali.dev/projects/e2337ca5-ae7d-430a-b963-b32567a9167d/files/341aefe9-48d3-4d85-b1d7-cb0f236673f6.jpg"

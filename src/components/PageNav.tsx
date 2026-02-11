@@ -13,9 +13,11 @@ const PageNav = ({ currentPage = "other", showBackButton = true }: PageNavProps)
     <nav className="fixed top-0 w-full bg-white/80 backdrop-blur-xl z-50 border-b border-border/50 shadow-sm">
       <div className="container mx-auto px-4 py-5 flex justify-between items-center">
         <Link to="/" className="flex items-center gap-3">
-          <div className="w-10 h-10 md:w-12 md:h-12 bg-gradient-to-br from-accent to-accent/80 rounded-xl flex items-center justify-center shadow-lg">
-            <Icon name="Leaf" className="text-white" size={24} />
-          </div>
+          <img 
+            src="https://cdn.poehali.dev/projects/e2337ca5-ae7d-430a-b963-b32567a9167d/bucket/88a6d201-533b-4002-8275-234a0fb21f06.jpg" 
+            alt="FertiGlobal Emirates Logo" 
+            className="h-10 md:h-14 w-auto object-contain"
+          />
           <div>
             <h1 className="text-lg md:text-2xl font-bold text-primary tracking-tight">FertiGlobal Emirates</h1>
             <p className="text-xs text-muted-foreground hidden sm:block font-medium">UralKhim Partner</p>
