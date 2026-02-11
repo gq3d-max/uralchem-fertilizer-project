@@ -65,9 +65,7 @@ const HeroSection = () => {
               Экспорт минеральных удобрений<br />
               <span className="bg-gradient-to-r from-accent to-accent/70 bg-clip-text text-transparent text-3xl md:text-4xl lg:text-5xl">на международные рынки</span>
             </h2>
-            <p className="text-xl md:text-2xl mb-10 text-muted-foreground font-light leading-relaxed text-center md:text-left animate-fade-in-up animation-delay-200">
-              Дистрибьютор азотных удобрений УралХим. Оптовый экспорт карбамида и промышленных удобрений для B2B клиентов
-            </p>
+            <p className="text-xl md:text-2xl mb-10 text-muted-foreground font-light leading-relaxed text-center md:text-left animate-fade-in-up animation-delay-200">Продукция производства УралХим. Оптовый экспорт карбамида и промышленных удобрений для B2B клиентов</p>
             <div className="grid grid-cols-3 gap-2 md:gap-4 lg:gap-6 mb-10">
               <div className="bg-card border-2 border-accent/20 p-2 md:p-4 lg:p-6 rounded-xl md:rounded-2xl hover:shadow-xl hover:border-accent/40 transition-all hover:-translate-y-1">
                 <div className="text-2xl md:text-3xl lg:text-4xl font-bold text-accent mb-1">46%</div>
