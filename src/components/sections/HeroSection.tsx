@@ -68,18 +68,18 @@ const HeroSection = () => {
             <p className="text-xl md:text-2xl mb-10 text-muted-foreground font-light leading-relaxed text-center md:text-left animate-fade-in-up animation-delay-200">
               Дистрибьютор азотных удобрений УралХим. Оптовый экспорт карбамида и промышленных удобрений для B2B клиентов
             </p>
-            <div className="grid grid-cols-3 gap-4 md:gap-6 mb-10">
-              <div className="bg-card border-2 border-accent/20 p-4 md:p-6 rounded-2xl hover:shadow-xl hover:border-accent/40 transition-all hover:-translate-y-1">
-                <div className="text-3xl md:text-4xl font-bold text-accent mb-1">46%</div>
-                <div className="text-sm md:text-base text-muted-foreground font-medium">Азот N</div>
+            <div className="grid grid-cols-3 gap-2 md:gap-4 lg:gap-6 mb-10">
+              <div className="bg-card border-2 border-accent/20 p-2 md:p-4 lg:p-6 rounded-xl md:rounded-2xl hover:shadow-xl hover:border-accent/40 transition-all hover:-translate-y-1">
+                <div className="text-2xl md:text-3xl lg:text-4xl font-bold text-accent mb-1">46%</div>
+                <div className="text-xs md:text-sm lg:text-base text-muted-foreground font-medium break-words">Азот N</div>
               </div>
-              <div className="bg-card border-2 border-accent/20 p-4 md:p-6 rounded-2xl hover:shadow-xl hover:border-accent/40 transition-all hover:-translate-y-1">
-                <div className="text-3xl md:text-4xl font-bold text-accent mb-1">100K</div>
-                <div className="text-sm md:text-base text-muted-foreground font-medium">тонн/месяц</div>
+              <div className="bg-card border-2 border-accent/20 p-2 md:p-4 lg:p-6 rounded-xl md:rounded-2xl hover:shadow-xl hover:border-accent/40 transition-all hover:-translate-y-1">
+                <div className="text-2xl md:text-3xl lg:text-4xl font-bold text-accent mb-1">100K</div>
+                <div className="text-xs md:text-sm lg:text-base text-muted-foreground font-medium break-words">тонн/месяц</div>
               </div>
-              <div className="bg-card border-2 border-accent/20 p-4 md:p-6 rounded-2xl hover:shadow-xl hover:border-accent/40 transition-all hover:-translate-y-1">
-                <div className="text-3xl md:text-4xl font-bold text-accent mb-1">20</div>
-                <div className="text-sm md:text-base text-muted-foreground font-medium">дней FOB</div>
+              <div className="bg-card border-2 border-accent/20 p-2 md:p-4 lg:p-6 rounded-xl md:rounded-2xl hover:shadow-xl hover:border-accent/40 transition-all hover:-translate-y-1">
+                <div className="text-2xl md:text-3xl lg:text-4xl font-bold text-accent mb-1">20</div>
+                <div className="text-xs md:text-sm lg:text-base text-muted-foreground font-medium break-words">дней FOB</div>
               </div>
             </div>
           </div>
