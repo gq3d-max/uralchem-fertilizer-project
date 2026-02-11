@@ -52,21 +52,21 @@ const HeroSection = () => {
   };
 
   return (
-    <section id="home" className="pt-32 pb-20 bg-gradient-to-br from-background via-muted/30 to-background relative overflow-hidden">
+    <section id="home" className="pt-20 md:pt-32 pb-12 md:pb-20 bg-gradient-to-br from-background via-muted/30 to-background relative overflow-hidden">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(160,225,200,0.15),transparent_50%),radial-gradient(circle_at_70%_80%,rgba(160,200,225,0.1),transparent_50%)]"></div>
       <div className="container mx-auto px-4 relative z-10">
-        <div className="grid md:grid-cols-2 gap-16 items-center">
+        <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-center">
           <div className="animate-fade-in">
-            <div className="inline-flex items-center gap-2 px-5 py-2.5 bg-accent/10 border border-accent/20 rounded-full mb-8">
+            <div className="inline-flex items-center gap-2 px-3 py-1.5 md:px-5 md:py-2.5 bg-accent/10 border border-accent/20 rounded-full mb-4 md:mb-8">
               <div className="w-2 h-2 bg-accent rounded-full animate-pulse"></div>
-              <span className="text-accent font-semibold text-sm tracking-wide">Экспорт удобрений из России</span>
+              <span className="text-accent font-semibold text-xs md:text-sm tracking-wide">Экспорт удобрений из России</span>
             </div>
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-[1.1] text-primary text-center md:text-left animate-fade-in-up">
+            <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6 leading-[1.1] text-primary text-center md:text-left animate-fade-in-up">
               Экспорт минеральных удобрений<br />
-              <span className="bg-gradient-to-r from-accent to-accent/70 bg-clip-text text-transparent text-3xl md:text-4xl lg:text-5xl">на международные рынки</span>
+              <span className="bg-gradient-to-r from-accent to-accent/70 bg-clip-text text-transparent text-2xl md:text-4xl lg:text-5xl">на международные рынки</span>
             </h2>
-            <p className="text-xl md:text-2xl mb-10 text-muted-foreground font-light leading-relaxed text-center md:text-left animate-fade-in-up animation-delay-200">Продукция производства УралХим. Оптовый экспорт карбамида и промышленных удобрений для B2B клиентов</p>
-            <div className="grid grid-cols-3 gap-2 md:gap-4 lg:gap-6 mb-10">
+            <p className="text-base md:text-xl lg:text-2xl mb-6 md:mb-10 text-muted-foreground font-light leading-relaxed text-center md:text-left animate-fade-in-up animation-delay-200">Продукция производства УралХим. Оптовый экспорт карбамида и промышленных удобрений для B2B клиентов</p>
+            <div className="grid grid-cols-3 gap-2 md:gap-4 lg:gap-6 mb-6 md:mb-10">
               <div className="bg-card border-2 border-accent/20 p-2 md:p-4 lg:p-6 rounded-xl md:rounded-2xl hover:shadow-xl hover:border-accent/40 transition-all hover:-translate-y-1">
                 <div className="text-2xl md:text-3xl lg:text-4xl font-bold text-accent mb-1">46%</div>
                 <div className="text-xs md:text-sm lg:text-base text-muted-foreground font-medium break-words">Азот N</div>
@@ -85,8 +85,8 @@ const HeroSection = () => {
           <div className="relative animate-scale-in max-w-full">
             <div className="absolute inset-0 bg-gradient-to-br from-accent/20 to-primary/20 rounded-3xl blur-3xl -z-10 transform scale-105"></div>
             
-            <div className="relative rounded-3xl shadow-2xl border-8 border-white/50 overflow-hidden">
-              <div className="relative h-[400px] md:h-[500px]">
+            <div className="relative rounded-2xl md:rounded-3xl shadow-2xl border-4 md:border-8 border-white/50 overflow-hidden">
+              <div className="relative h-[280px] md:h-[400px] lg:h-[500px]">
                 {images.map((image, index) => (
                   <img
                     key={index}
@@ -101,21 +101,21 @@ const HeroSection = () => {
 
               <button
                 onClick={goToPrevious}
-                className="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 bg-white/90 hover:bg-white rounded-full flex items-center justify-center shadow-lg transition-all hover:scale-110 z-10"
+                className="absolute left-2 md:left-4 top-1/2 -translate-y-1/2 w-8 h-8 md:w-10 md:h-10 bg-white/90 hover:bg-white rounded-full flex items-center justify-center shadow-lg transition-all hover:scale-110 z-10"
                 aria-label="Previous slide"
               >
-                <Icon name="ChevronLeft" size={24} className="text-primary" />
+                <Icon name="ChevronLeft" size={20} className="text-primary" />
               </button>
 
               <button
                 onClick={goToNext}
-                className="absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 bg-white/90 hover:bg-white rounded-full flex items-center justify-center shadow-lg transition-all hover:scale-110 z-10"
+                className="absolute right-2 md:right-4 top-1/2 -translate-y-1/2 w-8 h-8 md:w-10 md:h-10 bg-white/90 hover:bg-white rounded-full flex items-center justify-center shadow-lg transition-all hover:scale-110 z-10"
                 aria-label="Next slide"
               >
-                <Icon name="ChevronRight" size={24} className="text-primary" />
+                <Icon name="ChevronRight" size={20} className="text-primary" />
               </button>
 
-              <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2 z-10">
+              <div className="absolute bottom-2 md:bottom-4 left-1/2 -translate-x-1/2 flex gap-1.5 md:gap-2 z-10">
                 {images.map((_, index) => (
                   <button
                     key={index}
@@ -131,9 +131,9 @@ const HeroSection = () => {
               </div>
             </div>
 
-            <div className="absolute -bottom-8 -right-4 bg-gradient-to-br from-accent/80 to-accent/70 backdrop-blur-sm p-4 md:p-5 rounded-xl shadow-2xl border-2 border-white/50 z-20">
-              <div className="text-white text-lg md:text-xl font-bold mb-0.5">От $330</div>
-              <div className="text-white/90 text-sm md:text-base font-medium">за тонну FOB</div>
+            <div className="absolute -bottom-6 md:-bottom-8 -right-2 md:-right-4 bg-gradient-to-br from-accent/80 to-accent/70 backdrop-blur-sm p-3 md:p-4 lg:p-5 rounded-lg md:rounded-xl shadow-2xl border-2 border-white/50 z-20">
+              <div className="text-white text-base md:text-lg lg:text-xl font-bold mb-0.5">От $330</div>
+              <div className="text-white/90 text-xs md:text-sm lg:text-base font-medium">за тонну FOB</div>
             </div>
           </div>
         </div>
