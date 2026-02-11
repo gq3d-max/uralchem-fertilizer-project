@@ -171,14 +171,14 @@ const ArticlePage = () => {
               <span>Назад к списку статей</span>
             </Link>
 
-            <div className="bg-card border-2 border-border rounded-2xl p-8 md:p-12 shadow-lg">
-              <div className="flex items-start gap-4 mb-8">
-                <div className="flex-shrink-0 w-14 h-14 bg-gradient-to-br from-accent to-accent/80 rounded-2xl flex items-center justify-center shadow-lg">
-                  <Icon name="FileText" className="text-white" size={28} />
+            <div className="bg-card border-2 border-border rounded-2xl p-4 md:p-8 lg:p-12 shadow-lg">
+              <div className="flex items-start gap-3 md:gap-4 mb-6 md:mb-8">
+                <div className="flex-shrink-0 w-12 h-12 md:w-14 md:h-14 bg-gradient-to-br from-accent to-accent/80 rounded-2xl flex items-center justify-center shadow-lg">
+                  <Icon name="FileText" className="text-white" size={24} />
                 </div>
-                <div>
-                  <h1 className="text-3xl md:text-4xl font-bold text-primary mb-2">{article.title}</h1>
-                  <p className="text-muted-foreground">Полезная информация от FertiGlobal Emirates</p>
+                <div className="flex-1 min-w-0">
+                  <h1 className="text-xl md:text-3xl lg:text-4xl font-bold text-primary mb-2 break-words">{article.title}</h1>
+                  <p className="text-sm md:text-base text-muted-foreground break-words">Полезная информация от FertiGlobal Emirates</p>
                 </div>
               </div>
 
