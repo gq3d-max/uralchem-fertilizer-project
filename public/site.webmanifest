@@ -8,13 +8,13 @@
   "theme_color": "#86C232",
   "icons": [
     {
-      "src": "https://cdn.poehali.dev/projects/e2337ca5-ae7d-430a-b963-b32567a9167d/files/6ee1eeda-7b3a-4cb3-8256-63be7fb374a6.jpg",
+      "src": "https://cdn.poehali.dev/files/ddaba7c8-6431-4533-bd4c-bf3041df7f4e.jpg",
       "sizes": "192x192",
       "type": "image/jpeg",
       "purpose": "any maskable"
     },
     {
-      "src": "https://cdn.poehali.dev/projects/e2337ca5-ae7d-430a-b963-b32567a9167d/files/4e8b6a14-44f0-4de6-b569-8e9eb562006c.jpg",
+      "src": "https://cdn.poehali.dev/files/ddaba7c8-6431-4533-bd4c-bf3041df7f4e.jpg",
       "sizes": "512x512",
       "type": "image/jpeg",
       "purpose": "any maskable"
