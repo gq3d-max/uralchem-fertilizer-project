@@ -76,7 +76,7 @@ def handler(event: dict, context) -> dict:
               </div>
               <hr style="border: none; border-top: 1px solid #e2e8f0; margin: 20px 0;">
               <p style="font-size: 12px; color: #718096;">
-                Это письмо отправлено автоматически с сайта uralkhimpartner.ru
+                Это письмо отправлено автоматически с сайта ferti-global.com
               </p>
             </div>
           </body>
@@ -132,7 +132,7 @@ def handler(event: dict, context) -> dict:
                 <p style="font-size: 16px; color: #2c5282; font-weight: bold; margin: 0;">FertiGlobal Emirates</p>
                 <p style="font-size: 13px; color: #718096; margin: 5px 0;">Официальный партнер УралХим</p>
                 <p style="font-size: 12px; color: #a0aec0; margin: 15px 0 0 0;">
-                  uralkhimpartner.ru
+                  ferti-global.com
                 </p>
               </div>
             </div>
