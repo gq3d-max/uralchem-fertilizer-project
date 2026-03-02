@@ -15,7 +15,7 @@ import DripIrrigation from "./pages/DripIrrigation";
 import FoliarFeeding from "./pages/FoliarFeeding";
 import Info from "./pages/Info";
 import ArticlePage from "./pages/ArticlePage";
-import NotFound from "./pages/NotFound";
+import NotFound404 from "./components/NotFound404";
 
 const queryClient = new QueryClient();
 
@@ -48,7 +48,7 @@ const App = () => (
           <Route path="/info" element={<Info />} />
           <Route path="/info/:slug" element={<ArticlePage />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-          <Route path="*" element={<NotFound />} />
+          <Route path="*" element={<NotFound404 />} />
         </Routes>
       </BrowserRouter>
     </TooltipProvider>
