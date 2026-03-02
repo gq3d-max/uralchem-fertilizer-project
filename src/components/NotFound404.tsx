@@ -99,6 +99,32 @@ const NotFound404 = () => {
           </div>
         </div>
 
+        {/* Быстрые разделы */}
+        <div className="bg-white/5 border border-white/10 rounded-2xl p-6 mb-6">
+          <h2 className="text-white font-semibold text-center mb-4">
+            Популярные разделы
+          </h2>
+          <div className="grid grid-cols-2 gap-2 sm:grid-cols-3">
+            {[
+              { to: "/", label: "Главная", icon: "Home" },
+              { to: "/quality", label: "Качество", icon: "BadgeCheck" },
+              { to: "/logistics", label: "Логистика", icon: "Truck" },
+              { to: "/partnership", label: "Партнёрство", icon: "Handshake" },
+              { to: "/registration", label: "Регистрация", icon: "FileText" },
+              { to: "/info", label: "Статьи", icon: "BookOpen" },
+            ].map(({ to, label, icon }) => (
+              <Link
+                key={to}
+                to={to}
+                className="flex items-center gap-2 px-3 py-2.5 rounded-xl bg-white/5 hover:bg-white/10 text-slate-300 hover:text-white transition-colors text-sm"
+              >
+                <Icon name={icon} size={15} className="text-slate-400 shrink-0" />
+                {label}
+              </Link>
+            ))}
+          </div>
+        </div>
+
         <Link
           to="/"
           className="inline-flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white font-medium px-6 py-3 rounded-xl transition-colors"
